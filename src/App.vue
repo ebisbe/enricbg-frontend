@@ -84,7 +84,7 @@
             <!-- Panel -->
             <section class="panel color4-alt">
                 <div class="intro color4">
-                    <h2 class="major">Contact</h2>
+                    <h2 class="major">My contact</h2>
                     <p>If you want to share some ideas or hire me write a message. <br> Say just Hi!
                         if you are shy. I won't bite. </p>
                 </div>
@@ -128,6 +128,9 @@
     name: 'app',
     components: {
       Contact, Gallery
+    },
+    created () {
+      this.$ga.page('/')
     }
   }
 </script>
