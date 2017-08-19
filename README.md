@@ -2,9 +2,13 @@
 
 > My personal page [enricbg.me](https://enricbg.me).
 
+ 
 ## Build Setup
 
 ``` bash
+# Copy src/sample.config.js to src/config.js and configure your variables before deploying 
+cp src/sample.config.js src/config.js
+
 # install dependencies
 npm install
 

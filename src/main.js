@@ -6,10 +6,18 @@ import App from './App'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-axios.defaults.baseURL = 'https://2z9eibmk4m.execute-api.eu-west-1.amazonaws.com/prod'
+import * as config from './config.js'
+
+axios.defaults.baseURL = config.API_URL
 Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
+
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: config.GA
+})
 
 /* eslint-disable no-new */
 new Vue({
