@@ -129,7 +129,7 @@
     components: {
       Contact, Gallery
     },
-    created () {
+    mounted () {
       this.$ga.page('/')
     }
   }
