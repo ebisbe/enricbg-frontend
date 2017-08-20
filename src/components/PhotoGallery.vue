@@ -9,7 +9,7 @@
     props: ['photo', 'classSpan', 'position'],
     methods: {
       trackEvent: function (name) {
-        this.$ga.event('gallery-photo', 'click', 'photo', name)
+        this.$ua.trackEvent('gallery-photo', 'click', name)
       }
     },
     computed: {

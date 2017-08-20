@@ -13,10 +13,12 @@ Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 
-import VueAnalytics from 'vue-analytics'
+import VueAnalytics from 'vue-ua'
 
 Vue.use(VueAnalytics, {
-  id: config.GA
+  appName: 'enricbg-personal',
+  appVersion: '1.0',
+  trackingId: config.GA,
 })
 
 /* eslint-disable no-new */

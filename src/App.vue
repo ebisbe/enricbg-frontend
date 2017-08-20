@@ -130,7 +130,7 @@
       Contact, Gallery
     },
     mounted () {
-      this.$ga.page('/')
+      this.$ua.trackView('Home')
     }
   }
 </script>
