@@ -18,7 +18,7 @@ import VueAnalytics from 'vue-ua'
 Vue.use(VueAnalytics, {
   appName: 'enricbg-personal',
   appVersion: '1.0',
-  trackingId: config.GA,
+  trackingId: config.GA
 })
 
 /* eslint-disable no-new */
